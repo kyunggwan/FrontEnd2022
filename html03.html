@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML 시멘틱 태그</title>
+  <style>/*내부 스타일*/
+      span {
+        background-color: aliceblue;
+        width : 300px;
+        height : 20px;
+/*인라인 요소기 때문에 span 이 부분이 적용이 안된다.
+블록 요소는 내 마음대로 폭 높이 조절 가능 */
+      }
+  
+        *{
+          margin: 0%; 
+        }      
+      /*태그선택자*/
+      ul{
+        background-color: rgb(191, 191, 201);
+        list-style: none;
+      }
+      /*클래스 선택자*/
+      .idc1 {
+        background-color: aqua;
+      }
+      /*아이디 선택자*/
+      #sid2 {
+        background-color: cornflowerblue;
+      }
+      /*복합 선택자*/
+      header, footer {
+        background-color: chartreuse;
+        /*margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 50px;
+        margin-right: 10px; 
+        밑에처럼 한번에 쓰면 시계방향순*/
+        margin: 20px,10px,30px,50px;
+        padding: 10px;
+        width:  500px;
+        height : 200px;
+
+        border : 10px;
+        border-color: brown;
+border-style: dashed;
+      }
+      /*가상 선택자*/
+      a {
+        text-decoration: none;
+        color : white;
+      }
+      a:hover, a:active {
+        background-color: white;
+        color : coral;
+      }
+
+
+      h1 {
+        background-color: rgb(224, 255, 245);
+        border: 10px;
+        border-left: 10px;
+        border-top: 0px;
+        border-right: 0px;
+        border-bottom: 0px;
+        border-color: rgb(131, 131, 248);
+        border-style: solid;
+
+        margin: 10px;
+        padding: 10px;
+      }
+  </style>
+</head>
+<body>
+  <!--(div.dvc$>h1+ul>li.lic$)*6-->
+  <!--(div.dvc$>ul>li.lic*3)*6-->
+ 
+  <header>
+    <span>박경관</span>
+  </header>
+
+  <nav>
+    <ul>
+      <!--책갈피 기능 한페이지 내에서 이동할 떄는 아이디값으로 한다.-->
+      <li><a href = "#sid1">메뉴1</a></li>
+      <li><a href = "#sid2">메뉴2</a></li>
+      <li><a href = "#sid3">메뉴3</a></li>
+      <li><a href = "#sid4">메뉴4</a></li>
+
+    </ul>
+  </nav>
+
+  <main>
+    <!--(section#sid$*5>h1+ul>li.idc$*2)*5-->
+    <section id="sid1">
+      <h1>개인정보</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid2">
+      <h1>학력사항</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid3">
+      <h1>자격사항</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid4">
+      <h1>사용가능언어</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid5">
+      <h1>참고 사이트</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    <section id="sid1">
+      <h1>연락처</h1>
+      <ul>
+        <li class="idc1"></li>
+        <li class="idc2"></li>
+      </ul>
+    </section>
+    
+  </main>
+  <aside>
+
+  </aside>
+</body>
+</html>

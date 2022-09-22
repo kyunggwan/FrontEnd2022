@@ -1,0 +1,39 @@
+/*전체 적용*/
+*{
+  margin: 0px;
+  padding: 0px;
+
+}
+
+/*레이아웃*/
+nav {
+  background-color: #F3E482;
+  padding: 10px;
+  display: flex; /*flex 옆으로 배열*/
+  justify-content: space-between; /*알아서 간격 멀어져서 화면 맞춤*/
+  color: white;
+  height: 40px;
+}
+nav > ul {
+  display: flex;
+  list-style: none;
+}
+header {
+  background-color: #B9AD4E;
+}
+header > section {
+  color: white;
+  display: flex;
+}
+main {
+  background-color: #2EE193;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+}
+footer {
+  background-color: #817919;
+  padding: 10px;
+  display: flex;
+}

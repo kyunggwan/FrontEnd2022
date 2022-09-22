@@ -7,33 +7,66 @@
 
 /*레이아웃*/
 nav {
-  background-color: #F3E482;
-  padding: 10px;
+  background-color: #2EE193;
   display: flex; /*flex 옆으로 배열*/
   justify-content: space-between; /*알아서 간격 멀어져서 화면 맞춤*/
-  color: white;
   height: 40px;
+  padding: 20px;
+  font-size: x-large;
+  color: white;
 }
 nav > ul {
   display: flex;
   list-style: none;
 }
 header {
-  background-color: #B9AD4E;
+  background-color:#8EE47F;
 }
 header > section {
-  color: white;
+  color: black;
   display: flex;
+  
 }
-main {
-  background-color: #2EE193;
-  display: flex;
-  justify-content: space-between;
+.header_left, .header_right {
+  margin: 20px;
   text-align: center;
-
 }
-footer {
-  background-color: #817919;
-  padding: 10px;
+.header_left {
+  width: 30%;
+  
+  font-size: 30px;
+}
+.header_right{
+  width: 70%;
+}
+
+
+main {
+  background-color: #C7E579;
   display: flex;
+  flex-wrap: nowrap;
+  text-align: center;  
+}
+
+main > section {
+  width: 25%;
+  margin: 20px;
+}
+
+main img {
+  border-radius: 30%;
+}
+
+footer {
+  background-color:#F3E482;
+  color: black;
+  display: flex;
+  padding:30px;
+  
+}
+footer > h2, footer > ul{
+  margin: 10px;
+}
+footer > ul {
+  list-style-type: none;
 }
